@@ -75,3 +75,7 @@ Use the following commands to add, commit, and push changes to Git:
    git pull origin main
    git push
    ```
+
+## P3 Datafun Analytics
+
+1. Setup requirements.txt with only external depdency of (request)
