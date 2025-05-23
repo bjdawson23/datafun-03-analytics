@@ -1,0 +1,17 @@
+Healthy Life Expectancy:
+Minimum: 45.20
+Maximum: 76.80
+Mean: 64.45
+Standard Deviation: 7.06
+
+Average Healthy Life Expectancy by Regional Indicator:
+Western Europe: 72.86
+North America and ANZ: 72.18
+Middle East and North Africa: 65.31
+Latin America and Caribbean: 66.72
+Central and Eastern Europe: 68.15
+East Asia: 71.09
+Southeast Asia: 64.71
+Commonwealth of Independent States: 64.73
+Sub-Saharan Africa: 55.09
+South Asia: 62.45

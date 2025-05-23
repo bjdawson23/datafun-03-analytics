@@ -69,6 +69,7 @@ Many projects span several days. When starting work again, remember to:
 Use the following commands to add, commit, and push changes to Git:
 
    ```powershell
+   git clone https://github.com/youraccount/yourrepo
    git add .
    git commit -m "custom message"
    git push -u origin main
@@ -79,3 +80,8 @@ Use the following commands to add, commit, and push changes to Git:
 ## P3 Datafun Analytics
 
 1. Setup requirements.txt with only external depdency of (request)
+2. pip install requests
+3. py -m pip install --upgrade pip setuptools wheel
+4. py -m pip install --upgrade -r requirements.txt
+5. Used example get and process csv.  Looked at Healthy Life Expectancy statistics and by Region
+6. 
