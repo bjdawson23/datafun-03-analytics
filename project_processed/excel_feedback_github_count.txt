@@ -1,0 +1,8 @@
+Occurrences of 'GitHub' in columns ['A', 'B', 'C', 'D', 'E', 'F']:
+  Column A: 19
+  Column B: 33
+  Column C: 0
+  Column D: 1
+  Column E: 1
+  Column F: 4
+Total occurrences: 58
