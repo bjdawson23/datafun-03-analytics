@@ -1,5 +1,5 @@
 """
-Process a text file to count occurrences of the word "Romeo" and save the result.
+Process a text file to count occurrences of the word "Romeo", "Juliet", "Art", "Love", "Death" and save the result.
 """
 
 #####################################
@@ -28,39 +28,41 @@ PROCESSED_DIR: str = "project_processed"
 # Define Functions
 #####################################
 
-def count_word_occurrences(file_path: pathlib.Path, word: str) -> int:
-    """Count the occurrences of a specific word in a text file (case-insensitive)."""
+def count_word_occurrences(file_path: pathlib.Path, words: list) -> dict:
+    """Count the occurrences of each word in a list (case-insensitive) in a text file."""
+    counts = {}
     try:
         with file_path.open('r') as file:
-            content: str = file.read()
-            return content.lower().count(word.lower())
+            content: str = file.read().lower()
+            for word in words:
+                counts[word] = content.count(word.lower())
+        return counts
     except Exception as e:
         logger.error(f"Error reading text file: {e}")
-        return 1
+        return {word: 0 for word in words}
 
 def process_text_file():
-    """Read a text file, count occurrences of 'Romeo', and save the result."""
+    """Read a text file, count occurrences of several words, and save the result."""
  
     input_file = pathlib.Path(FETCHED_DATA_DIR, "romeo.txt")
-
     output_file = pathlib.Path(PROCESSED_DIR, "text_romeo_word_count.txt")
 
-    # TODO: Replace with the word you want to count from your text file
-    word_to_count: str = "Romeo"
+    # List of words to count
+    word_to_count = ["Romeo", "Juliet", "Art", "Love", "Death"]
 
-    # TODO: Make any necessary changes to the logic
-    word_count: int = count_word_occurrences(input_file, word_to_count)
+    # Count occurrences for each word
+    word_counts = count_word_occurrences(input_file, word_to_count)
 
     # Create the output directory if it doesn't exist
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
     # Write the results to the output file
     with output_file.open('w') as file:
-        # TODO: Update the output to describe your results
-        file.write(f"Occurrences of '{word_to_count}': {word_count}\n")
+        file.write("Occurrences of selected words:\n")
+        for word, count in word_counts.items():
+            file.write(f"  {word}: {count}\n")
     
-    # Log the processing of the TEXT file
-    logger.info(f"Processed text file: {input_file}, Word count saved to: {output_file}")
+    logger.info(f"Processed text file: {input_file}, Word counts saved to: {output_file}")
 
 #####################################
 # Main Execution

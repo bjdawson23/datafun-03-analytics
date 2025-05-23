@@ -133,3 +133,11 @@
 2025-05-23 12:07:46.565 | INFO     | __main__:write_txt_file:77 - Writing data to project_data\romeo.txt...
 2025-05-23 12:07:46.572 | INFO     | __main__:write_txt_file:81 - SUCCESS: Data written to project_data\romeo.txt
 2025-05-23 12:07:46.573 | INFO     | __main__:fetch_txt_file:57 - SUCCESS: Text file fetched and saved as romeo.txt
+2025-05-23 14:47:38.081 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-05-23 14:47:38.081 | INFO     | __main__:<module>:70 - Starting text processing...
+2025-05-23 14:47:38.084 | INFO     | __main__:process_text_file:63 - Processed text file: project_data\romeo.txt, Word count saved to: project_processed\text_romeo_word_count.txt
+2025-05-23 14:47:38.085 | INFO     | __main__:<module>:72 - Text processing complete.
+2025-05-23 14:54:24.738 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-05-23 14:54:24.738 | INFO     | __main__:<module>:72 - Starting text processing...
+2025-05-23 14:54:24.740 | INFO     | __main__:process_text_file:65 - Processed text file: project_data\romeo.txt, Word counts saved to: project_processed\text_romeo_word_count.txt
+2025-05-23 14:54:24.741 | INFO     | __main__:<module>:74 - Text processing complete.

@@ -85,5 +85,5 @@ Use the following commands to add, commit, and push changes to Git:
 4. py -m pip install --upgrade -r requirements.txt
 5. CSV file: Used example get and process csv scripts.  Looked at Healthy Life Expectancy statistics and by Region
 6. ECXEL file: Used example get and process excel scripts.  Had to pip install openpyxl.  Looked for the number of occurrences of "github" in each of the columns and total from the excel file.
-7. JSON file: Used example get and process json scripts.  Added logic to list astronauts aboard each craft.
-8. TEXT file: 
+7. JSON file:  json scripts.  Added logic to list astronauts aboard each craft.
+8. TEXT file: Used example get and process text scripts. Added "Juliet", "Art", "Love", "Death" to the word search count logic.

@@ -1,0 +1,6 @@
+Occurrences of selected words:
+  Romeo: 311
+  Juliet: 183
+  Art: 167
+  Love: 175
+  Death: 75
